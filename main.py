@@ -13,7 +13,23 @@ data['코코넛']=3
 print(data)
 
 #set 집합자료형
+#초기화 방법1
 data1={11,1,1,2,3,4,4,5}
 print(data1) #중복 안됨
 
+#초기화 방법2
+data1=set([1,2,3,4,4])
+data1.update([3,4,4,5,6,7])
+print(data1)
+data1.remove
 
+i = 1
+result = 0
+
+while(i<=9):
+	if i % 2 == 1 :
+		result += i
+	i += 1
+
+print(result)
+	
