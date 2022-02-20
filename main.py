@@ -49,3 +49,14 @@ print(add(3,7))
 
 #람다표현식
 print((lambda a, b : a+b)(3,7))
+
+#입력
+n = int(input())
+data = list(map(int,input().split()))
+print(data)
+
+#입력2
+import sys
+
+data=sys.stdin.readline().rstrip()
+print(data)
