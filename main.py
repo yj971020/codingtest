@@ -57,6 +57,5 @@ print(data)
 
 #입력2 빠른방법
 import sys
-
 data=sys.stdin.readline().rstrip()
 print(data)
