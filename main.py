@@ -33,3 +33,10 @@ while(i<=9):
 
 print(result)
 	
+
+#for 문
+result =0 
+for i in range(10) :
+	result += i
+
+print(result)
