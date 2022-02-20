@@ -12,4 +12,8 @@ data['오렌지']='orange'
 data['코코넛']=3
 print(data)
 
+#set 집합자료형
+data1={11,1,1,2,3,4,4,5}
+print(data1) #중복 안됨
+
 
