@@ -50,7 +50,7 @@ print(add(3,7))
 #람다표현식
 print((lambda a, b : a+b)(3,7))
 
-#입력
+#입력 (띄어쓰기로 구분된 입력을 list 로 split 하여 리스트에 저장)
 n = int(input())
 data = list(map(int,input().split()))
 print(data)
