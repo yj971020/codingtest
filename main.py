@@ -1,9 +1,14 @@
-n=int(input())
-array=[]
-score={}
+import sys
+
+n=int(sys.stdin.readline())
+arr=[]
 for i in range(n):
-    array.append(str(input()))
-    r= array[i].split()
-    score[r[1]]=r[0]
-for str in sorted(r).values:
-    print(str,end=" ")
+  arr.append(int(sys.stdin.readline()))
+count=[0]*(max(arr)+1)
+
+for i in range(len(arr)):
+  count[arr[i]]+=1
+for i in range(len(count)):
+    for j in range(count[i]):
+      print(i,end="\n")
+   
