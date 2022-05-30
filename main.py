@@ -1,11 +1,14 @@
-import sys
+from collections import deque
 
-n=int(sys.stdin.readline().rstrip())
-a=[0]*10001
-for i in range(n):
-    a[int(sys.stdin.readline().rstrip())]+=1
- 
-for i in range(n):
-    if a[i]!=0:
-        for j in range(a[i]):
-            print(i)
+def solution(priorities, location):
+  answer=0
+  q = deque(priorities)
+  for i in range(len(priorities)):
+    v=q.popleft()
+    if v<=min(q):
+      answer+=1
+    else:
+      q.append(v)
+  return answer
+
+print(solution([1,1,9,1,1,1],0))
